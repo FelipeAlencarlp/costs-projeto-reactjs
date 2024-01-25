@@ -2,11 +2,11 @@
   "projects": [
     {
       "id": "4d56",
-      "name": "Projeto teste 4",
-      "budget": "10000",
+      "name": "Projeto Atualizado",
+      "budget": "15000",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": []
