@@ -1,28 +1,6 @@
 {
   "projects": [
     {
-      "id": "c6fb",
-      "name": "projeto teste",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "edb5",
-      "name": "Meu projeto 3",
-      "budget": "15000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "4d56",
       "name": "Projeto teste 4",
       "budget": "10000",
