@@ -11,6 +11,7 @@ function NewProject() {
         // initialize cost and services
         project.cost = 0;
         project.services = [];
+        const state = { message: "Projeto criado com sucesso!" };
 
         fetch("http://localhost:5000/projects", {
             method: 'POST',
@@ -23,7 +24,7 @@ function NewProject() {
             .then((data) => {
                 console.log(data)
                 // redirect on success
-                navigate('/projects', { message: "Projeto criado com sucesso!" });
+                navigate('/projects', { state });
             })
             .catch((err) => console.log(err));
     }
