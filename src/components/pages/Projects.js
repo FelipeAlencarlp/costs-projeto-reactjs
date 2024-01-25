@@ -1,6 +1,10 @@
 import { useLocation } from 'react-router-dom';
 
-import Message from "../layout/Message";
+import Message from '../layout/Message';
+import Container from '../layout/Container';
+import LinkButton from '../layout/LinkButton';
+
+import styles from './Projects.module.css';
 
 function Projects() {
   // para pegar a mensagem dinamica
@@ -12,12 +16,20 @@ function Projects() {
   }
 
   return (
-      <div>
+    <div className={styles.projectsContainer}>
+      <div className={styles.titleContainer}>
         <h1>Meus Projetos</h1>
-        {message && 
-          <Message type="success" msg={message} />
-        }
+        <LinkButton to="/newproject" text="Criar Projeto"/>
       </div>
+
+      {message && 
+        <Message type="success" msg={message} />
+      }
+
+        <Container>
+          <p>Projetos...</p>
+        </Container>
+    </div>
   );
 }
   
